@@ -31,4 +31,4 @@ webpack.base.config.js 调整这两项的值到3M
   },
 ```
 ## 配置文件
-增加两个 local,production
+增加两个 local.json,production.json
