@@ -18,6 +18,9 @@ config.fe.ldap = !!config.ldap.server
 fs.writeFileSync(resolve('../views/config.json'), JSON.stringify(config.fe))
 
 module.exports = {
+  entry: [
+    'webpack-hot-middleware/client?path=http://' + config.fe.host + ':' + config.fe.port + '/__webpack_hmr'
+  ],
   devtool: isProd ? false : '#cheap-module-source-map',
   output: {
     path: resolve('../dist'),
@@ -99,7 +102,8 @@ module.exports = {
     ]
   },
   performance: {
-    maxEntrypointSize: 300000,
+    maxEntrypointSize: 3000000,
+    maxAssetSize: 3000000,
     hints: isProd ? 'warning' : false
   },
   plugins: isProd
