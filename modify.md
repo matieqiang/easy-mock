@@ -30,4 +30,5 @@ webpack.base.config.js 调整这两项的值到3M
     hints: isProd ? 'warning' : false
   },
 ```
-
+## 配置文件
+增加两个 local,production
