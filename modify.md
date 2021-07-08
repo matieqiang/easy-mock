@@ -7,7 +7,7 @@
 https://nodejs.org/zh-cn/download/releases/
 
 ## redis install 
-docker run -d --name redis605 -h 192.168.10.132 -p 6379:6379 redis
+docker run -d --name redis605 --restart=always -h 192.168.10.132 -p 6379:6379 redis
 ## mongodb install 
 docker run -d --name mongo4023 -h 192.168.10.132 -p 27017:27017 -v /data/mongo/mongodata mongo:4.0.23
 
