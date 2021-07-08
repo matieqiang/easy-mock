@@ -66,6 +66,19 @@ pm2 start pm2.config.js --env production
 
 如果启动失败，可以在/home/<user>/.pm2/logs目录下查看日志
 
+```
+  Error: 
+
+Vue packages version mismatch:
+
+- vue@2.5.13
+- vue-server-renderer@2.6.14
+
+This may cause things to work incorrectly. Make sure to use the same version for both
+  
+修改成同一个版本
+```
+
 ### pm2 常用命令
 ```bash
 npm install pm2 -g     # 命令行安装 pm2
