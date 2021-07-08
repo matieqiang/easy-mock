@@ -39,7 +39,7 @@ webpack.base.config.js 调整这两项的值到3M
 
 PM2 是一个带有负载均衡功能的 Node 应用的进程管理器。 当你要把你的独立代码利用全部的服务器上的所有 CPU，并保证进程永远都活着，0 秒的重载， PM2 是完美的。
 
-npm install pm2
+npm i -g pm2
 
 添加pm2 启动配置文件
 
@@ -63,6 +63,8 @@ module.exports = {
 }
 ```
 pm2 start pm2.config.js --env production
+
+如果启动失败，可以在/home/<user>/.pm2/logs目录下查看日志
 
 ### pm2 常用命令
 ```bash
